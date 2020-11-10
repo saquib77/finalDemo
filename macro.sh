@@ -10,7 +10,7 @@ else
 	git branch
 	echo "Enter the branch name"
 	read bName
+	git checkout "${bName}"
 	git push origin "${bName}"
-	git status
 fi
 echo "Successfull Pushed"
