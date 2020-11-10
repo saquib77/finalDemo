@@ -3,7 +3,7 @@ git add .
 echo "Enter Commit Message"
 read comMes
 git commit -m "${comMes}"
-if [ -n "$(git status - porcelain)" ];
+if[ -n "$(git status - porcelain)"];
 then
 	echo "No Such File to Push"
 else
